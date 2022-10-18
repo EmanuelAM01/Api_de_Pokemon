@@ -1,0 +1,12 @@
+.button{
+    background-color: rgb(201, 72, 72);
+    border-radius: 6px;
+    color: white;
+    border: 0px solid;
+    height: 30px;
+    margin-top: 20px;
+}
+ol{
+    padding: 0px;
+    margin-top:  20px;
+}
