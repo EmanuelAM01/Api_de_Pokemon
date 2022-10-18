@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, {useState} from "react";
 import styles from "./PokemonButton.module.css";
 
@@ -9,8 +10,8 @@ const Pokemon = () =>{
     const showlist = (e) =>{
         e.preventDefault();
         appear === false?
-        fetch("https://pokeapi.co/api/v2/pokemon?limit=807&offset=0")
-            .then(response => response.json())
+        axios.get("https://pokeapi.co/api/v2/pokemon?limit=807&offset=0")
+            .then(response => response.data)
             .then(response => setList(response.results))
         :setList([])
         appear === false?setAppear(true):setAppear(false);
