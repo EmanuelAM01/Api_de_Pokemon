@@ -18,6 +18,7 @@ const Pokemon = () =>{
         console.log(appear);
     }
 
+    
     return(
         <>
         <button onClick={showlist} className={styles.button}>Fetch Pokemon</button>
